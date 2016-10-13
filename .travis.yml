@@ -6,11 +6,8 @@ jdk:
 after_success:
   - bash <(curl -s https://codecov.io/bash)
 notifications:
-email:
-  
-recipients:
-
-     - erikkjosavik@hotmail.com
-
-   on_failure: [always|never|change] # 
-default: always
+  email:
+    recipients:
+      - erik_kjosavik@hotmail.com
+    on_success: never
+    on_failure: always
